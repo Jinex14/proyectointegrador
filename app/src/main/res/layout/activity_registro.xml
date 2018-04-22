@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.integrador.proyecto.proyectointegrador.registro">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="numberDecimal"
+            android:id="@+id/txtId"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Codigo"
+            android:inputType="number"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="50"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo el escaner puede llenar este campo"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtCod"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="80"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Max 80 caracteres"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtNom"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Unidad:"
+            android:id="@+id/textView"
+            android:layout_marginBottom="10dp" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            app:ms_background_color="#eeeeee"
+            app:ms_text_color="#000"
+            android:layout_height="wrap_content"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="8"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 8 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtCanti"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Calorias"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtCalo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Carbohidratos"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtCarbohi"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Proteinas"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtProte"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grasas"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtGrasa"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grasas Saturada"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtGrasaSatu"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grasas Polisaturada"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtGrasaPoli"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grasas Monoinsaturada"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtGrasaMono"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grasas Trans"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtGrasaTrans"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Colesterol"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtColeste"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Azucar"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtAzucar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fibra"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtFibra"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sodio"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtSodio"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Potasio"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtPotasio"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Calcio"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtCalcio"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hierro"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtHierro"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vitamina A"
+            android:inputType="numberDecimal"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtVitA"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vitamina C"
+            app:met_baseColor="#717171"
+            app:met_floatingLabel="highlight"
+            android:inputType="numberDecimal"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ff0000"
+            app:met_primaryColor="#3149e6"
+            app:met_helperText="Solo 10 caracteres. Separador de decimales solo por punto(.)"
+            app:met_helperTextColor="#000000"
+            android:id="@+id/txtVitC"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnAceptar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar"
+                android:theme="@style/MyButton"
+                android:layout_below="@+id/view"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar"
+                android:theme="@style/MyButton"
+                android:layout_below="@+id/view"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eliminar"
+                android:theme="@style/MyButton"
+                android:layout_below="@+id/view"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

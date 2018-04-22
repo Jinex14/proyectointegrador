@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.integrador.proyecto.proyectointegrador.Datos01Activity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/image02"
+        android:src="@drawable/primera"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:layout_below="@+id/txtEdad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:theme="@style/MyButton"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="Control de Calorias"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp"
+        android:textSize="30dp"
+        android:background="#1E88E5"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="false"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rgDatos01"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:id="@+id/rbMasculino"
+                    android:buttonTint="#1E88E5"
+                    android:gravity="center" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino"
+                    android:id="@+id/rbFemenino"
+                    android:gravity="center"
+                    android:buttonTint="#1E88E5"
+                    android:layout_marginLeft="10dp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:inputType="number"
+        app:met_baseColor="#717171"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="2"
+        app:met_errorColor="#ff0000"
+        app:met_primaryColor="#3149e6"
+        app:met_helperText="Ingresar su edad"
+        app:met_helperTextColor="#000000"
+        android:id="@+id/txtEdad"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
